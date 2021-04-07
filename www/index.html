@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Hello World - Rust WASM!</title>
+</head>
+
+<body>
+  <h2>Formulário de soma utilizando método implementado em Rust - WASM</h2>
+  <form>
+    <input type="number" id="number1">
+    <input type="number" id="number2">
+    <button id="somarComWasm">Somar</button>
+  </form>
+  <hr>
+  <h2>Testes de Performance</h2>
+  <p>Cada botão abaixo realiza a criação de um array de 1 milhão posições de forma dinãmica e retorna o tempo que
+    demorou para processar no console (F12) </p>
+  <p>Nada avançado, é apenas uma iteração mesmo e não visa o melhor meio de fazer isso, é apenas a fim de testes e
+    comparação.</p>
+
+  <button id="arrayWASM">Processar com WASM</button>
+  <button id="arrayJS">Processar com JS</button>
+
+  <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+  <script src="./bootstrap.js"></script>
+</body>
+
+</html>
